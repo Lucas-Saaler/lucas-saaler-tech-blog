@@ -9,7 +9,7 @@
 <br>
 
 <div class="row mt-4">
-  <div class="col-md-6">
+  <div class="col-md-12">
     <h3>Add a Comment:</h3>
 
     <form class="form new-comment-form">
@@ -22,14 +22,16 @@
     </form>
   </div>
 
-<br>
+  <br>
 
-    {{#each comment}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <p>{{comment.description}}</p>
-      </div>
-    </div>
+  <ul class="list-group">
+    {{#each comments as |comment|}}
+        <li class="list-item">
+          {{comment.user_id}}
+        </li>
+        <li class="list-item">
+          <p>{{comment.description}}</p>
+        </li>
     {{/each}}
-
-<script src="/js/comment.js"></script>
+  </ul>
+  <script src="/js/comment.js"></script>

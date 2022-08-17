@@ -28,6 +28,8 @@ router.get('/', async (req, res) => {
 
 router.get('/topic/:id', async (req, res) => {
   try {
+    const commentData = await Comment.findAll()
+    const comment = commentData.map((comment) => comment.get({ plain: true }))
     const topicData = await Topic.findByPk(req.params.id, {
       include: [
         {
@@ -36,7 +38,7 @@ router.get('/topic/:id', async (req, res) => {
         },
         {
           model: Comment,
-          attributes: ['description', 'topic_id']
+          attributes: ['description', 'topic_id', 'user_id']
         }
       ],
     });
@@ -44,6 +46,7 @@ router.get('/topic/:id', async (req, res) => {
 
     res.render('topic', {
       ...topic,
+      comment,
       logged_in: req.session.logged_in
     });
   } catch (err) {
