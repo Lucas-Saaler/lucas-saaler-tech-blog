@@ -25,6 +25,8 @@ After you download this file, run "npm i" in your terminal to install the requir
 
 After you download the file, you can use this project by opening your terminal and running "source db/schema" from your sql terminal. Next, you will want to apply the seeds to your database, which is done via the use of the "npm run seed" command in your terminal after quitting your sql terminal. After you finish this step, simply invoke the application via the use of the "npm start" command from the terminal. From there, you can test the various routes in Insomnia or by posting/commenting. Be sure to login before attempting that.
 
+Deployed website found here: https://lsaa-tech-blog.herokuapp.com/
+
 ![Website Preview](asset/Capture.PNG)
 
 ## Credits
