@@ -1,0 +1,14 @@
+[
+    {
+      "description": "Cool",
+      "topic_id": 1
+    },
+    {
+      "description": "Nice!",
+      "topic_id": 2
+    },
+    {
+      "description": "Sweet!",
+      "topic_id": 3
+    }
+  ]

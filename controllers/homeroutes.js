@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Topic, User } = require('../models');
+const { Topic, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -34,9 +34,12 @@ router.get('/topic/:id', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        {
+          model: Comment,
+          attributes: ['description', 'topic_id']
+        }
       ],
     });
-
     const topic = topicData.get({ plain: true });
 
     res.render('topic', {
