@@ -10,6 +10,8 @@ This application allows users to post and comment on a tech blog.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [Development](#development)
+
 
 ## License
 
@@ -28,3 +30,7 @@ After you download the file, you can use this project by opening your terminal a
 ## Credits
 
 The starter code for this application was provided by the Ohio State University coding bootcamp. I wrote the rest of this code myself using NodeJS, MySQL, Seqlelize, express-session, and dotenv.
+
+## Development
+
+Replace the number IDs above comments with usernames.
