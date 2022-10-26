@@ -35,4 +35,4 @@ The starter code for this application was provided by the Ohio State University 
 
 ## Development
 
-Replace the number IDs above comments with usernames
+Replace the number IDs above comments with usernames.
